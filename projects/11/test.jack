@@ -1,0 +1,18 @@
+class BankAccount {
+ // class variables
+ static int nAccounts;
+ static int bankCommission; // as a percentage, e.g. 10 for 10 percent
+ // account properties
+ field int id;
+ field String owner;
+ field int balance;
+
+ method int mult(int x, int y) {
+ var int sum, j; // some local variables
+ let sum = 0;
+ var Date due; // some other date variable
+ // … omitted code
+ let balance = (balance + sum) - commission(sum * 5);
+ return;
+ }
+}

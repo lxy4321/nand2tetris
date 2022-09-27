@@ -1,0 +1,26 @@
+class Main {
+   function void main() {
+      var int luckyNum;
+      var int num;
+      let luckyNum = 66;
+
+      do Output.printString("Test your luck by gussing a number! What's the number you are gussing (between 0 and 100) ");
+     
+      let num = Keyboard.readInt("Enter a number: ");
+      while (~(num = luckyNum)) {
+     	 if (num < luckyNum) {
+            do Output.printString("Oops! Your guess is smaller than the answer!");
+	 }
+	 if (num > luckyNum) {
+            do Output.printString("Oops! Your guess is larger than the answer!");
+	 }
+         let num = Keyboard.readInt(" Enter a number: ");
+      }
+      if (num = luckyNum) {
+            do Output.printString("Yeah! You got it!");
+	    return;
+	 }
+
+      return;
+   }
+}
